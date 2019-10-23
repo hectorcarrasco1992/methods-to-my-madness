@@ -21,10 +21,13 @@ function repeat(str, repetitions) {
 function startsWith(string, substring) {
   let correct = true
   let incorrect = false
-  if(string[0] === substring[0]){
-    return correct
+  for (let i = 0; i < string.length; i ++){
+  if(string [0] === substring[0]){
+  return correct
 
-  }else return incorrect
+  }
+  }
+  return incorrect
 
   
  
@@ -58,6 +61,17 @@ function includes(arr, item) {
 
 function join(arr, separator = '') {
   
+    let newArr =''
+    for(let i=0; i <arr.length; i++){
+      if(i=== arr.length-1){
+      newArr =newArr + arr[i]}
+      else{
+    newArr =newArr + arr[i] + separator}
+    }
+    return newArr
+
+
+
 }
 
 
